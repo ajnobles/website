@@ -1,0 +1,9 @@
+.img-profile {
+    max-width: 500px;
+    max-height: 500px;
+    padding-bottom: 75px;
+}
+
+._headerTitle {
+    text-transform: uppercase;
+}

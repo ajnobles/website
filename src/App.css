@@ -1,0 +1,14 @@
+hr {
+    background-color: black;
+    height: 5px;
+    width: 50%;
+    margin: auto;
+}
+
+._mainContainerRow {
+    padding: 75px 0;
+}
+
+._paddingTop10 {
+    padding-top: 10px;
+}
