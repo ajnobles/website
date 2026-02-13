@@ -6,4 +6,7 @@
 
 ._headerTitle {
     text-transform: uppercase;
+    font-size: 3em;
+    font-family: 'Montserrat';
+    font-weight: 700;
 }

@@ -1,7 +1,9 @@
+
+
 hr {
     background-color: black;
     height: 5px;
-    width: 50%;
+    width: 240px;
     margin: auto;
 }
 
@@ -11,4 +13,13 @@ hr {
 
 ._paddingTop10 {
     padding-top: 10px;
+}
+
+._fontMontserrat700 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+._fontLato {
+    font-family: 'Lato';
 }

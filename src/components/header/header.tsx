@@ -9,8 +9,8 @@ const Header = () => {
                 roundedCircle 
                 src="src\assets\Profile-Pic.jpg" />
             <h1 id="head-title" className="_headerTitle">Allen Nobles</h1>
-            <hr />
-            <h3 id="head-subtitle" className="font-weight-light _paddingTop10">Computer Science - Oregon State University</h3>
+            <hr className="star-light" />
+            <h3 id="head-subtitle" className="_paddingTop10 _fontLato">Computer Science - Oregon State University</h3>
         </Container>
     )
 };
