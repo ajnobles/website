@@ -1,6 +1,8 @@
 import Container from "react-bootstrap/esm/Container";
 import Project from "./project";
 import './projects.css'
+import smallshImg from '../../assets/projects/Smallsh_Running_Test.png';
+import particleImg from '../../assets/projects/Particle_System_Demo_1.png';
 
 const Projects = () => {
 
@@ -15,7 +17,7 @@ const Projects = () => {
             "OpenCL",
             "OpenGL"
         ],
-        ImageLocation: 'src\\assets\\projects\\Particle_System_Demo_1.png'
+        ImageLocation: particleImg
     };
 
     const smallsh = {
@@ -23,7 +25,7 @@ const Projects = () => {
         Description: "Shell program that functions as a simplified version of the Bash shell. \
                       Source code available upon request.",
         Technologies: [ "C" ],
-        ImageLocation: "src\\assets\\projects\\Smallsh_Running_Test.png"
+        ImageLocation: smallshImg
     };
 
     return (
