@@ -7,12 +7,13 @@ const Project = (props: ProjectProps) => {
     const tech = props.Technologies.join(', ');
 
     return (
-        <Container fluid className="_project">
+        <Container fluid className="_project _fontLato _projectTextMaxWidth">
             <Image className="_projectImage"
                 src={props.ImageLocation}
             />
-            <h3>{props.Name}</h3>
-            <div>Programming languages/Technologies used: {tech}</div>
+            <h3><b>{props.Name}</b></h3>
+            <div>{props.Description}</div>
+            <div><i>Programming languages/Technologies used: {tech}</i></div>
         </Container>
     )
 }

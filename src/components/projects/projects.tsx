@@ -28,10 +28,10 @@ const Projects = () => {
 
     return (
         <Container id="projects" className="text-center">
-            <h2 className="text-center">Projects</h2>
+            <h2 className="_fontMontserrat700">Projects</h2>
             <hr />
-            <Project {...particleSystem } />
             <Project {...smallsh}/>
+            <Project {...particleSystem } />
         </Container>
     );
 };
