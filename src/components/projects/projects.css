@@ -1,6 +1,7 @@
 ._projectImage {
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 200px;
+    max-height: 200px;
+    padding: 20px
 }
 
 ._project {

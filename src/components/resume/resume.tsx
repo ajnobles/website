@@ -23,8 +23,8 @@ const Resume = () => {
     ];
     
     return (
-        <Container className="_paddingLeft _fontMontserrat700">
-            <h2 className="text-center">Resume</h2>
+        <Container className="_paddingLeft">
+            <h2 className="text-center text-uppercase _fontMontserrat700">Resume</h2>
             <hr />
             <Row className="_textMaxWidth">
                 <h2>Education</h2>

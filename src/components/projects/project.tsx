@@ -8,10 +8,10 @@ const Project = (props: ProjectProps) => {
 
     return (
         <Container fluid className="_project _fontLato _textMaxWidth">
+            <h3><b>{props.Name}</b></h3>
             <Image className="_projectImage"
                 src={props.ImageLocation}
             />
-            <h3><b>{props.Name}</b></h3>
             <div>{props.Description}</div>
             <div><i>Programming languages/Technologies used: {tech}</i></div>
         </Container>

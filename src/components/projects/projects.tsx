@@ -30,7 +30,7 @@ const Projects = () => {
 
     return (
         <Container className="text-center">
-            <h2 className="_fontMontserrat700">Projects</h2>
+            <h2 className="text-uppercase _fontMontserrat700">Projects</h2>
             <hr />
             <Project {...smallsh}/>
             <Project {...particleSystem } />
