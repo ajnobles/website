@@ -17,7 +17,7 @@ const Footer = () => {
                     <Button href="http://www.linkedin.com/in/allenjnobles">
                         <FontAwesomeIcon icon={faLinkedinIn} />
                     </Button>
-                    <Button href="http://www.linkedin.com/in/allenjnobles">
+                    <Button href="https://github.com/ajnobles">
                         <FontAwesomeIcon icon={faGithub} />
                     </Button>
                 </Stack>
