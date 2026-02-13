@@ -1,6 +1,7 @@
 import Job from "./job";
 import Education from "./education";
 import { Col, Container, Row } from "react-bootstrap";
+import './resume.css';
 
 const Resume = () => {
 
@@ -22,7 +23,7 @@ const Resume = () => {
     ];
     
     return (
-        <Container id="resume _fontMontserrat700">
+        <Container id="resume" className="_paddingLeft _fontMontserrat700">
             <h2 className="text-center">Resume</h2>
             <hr />
             <Row className="_textMaxWidth">

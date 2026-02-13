@@ -4,7 +4,7 @@ const Job = (props: JobProps) => {
 
     return (
         <>
-            <h5>{props.Company}  {props.JobTitle}</h5>
+            <h5 className="_nowrap"><b><u>{props.Company}  {props.JobTitle}</u></b></h5>
             <ul>
                 <li>{props.CompanyLocation}</li>
                 <li>{props.StartMonthYear} - {endMonth}</li>

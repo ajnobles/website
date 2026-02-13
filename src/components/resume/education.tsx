@@ -4,10 +4,10 @@ const Education = (props: educationProps) => {
     const courses = props.RelevantCourseWork.join(',');
     return (
         <Container fluid>
-            <h5><u><b>{props.SchoolName} - {props.SchoolLocation}</b></u></h5>
+            <h5 className="_nowrap"><u><b>{props.SchoolName} - {props.SchoolLocation}</b></u></h5>
             <ul>
-                <li>{props.EndMonthYear}</li>
-                <li>{props.Degree}, {props.Discipline}, GPA: {props.GPA}</li>
+                <li className="_nowrap">{props.EndMonthYear}</li>
+                <li className="_nowrap">{props.Degree}, {props.Discipline}, GPA: {props.GPA}</li>
                 <li>Relevant Coursework: {courses}</li>
             </ul>
         </Container>
