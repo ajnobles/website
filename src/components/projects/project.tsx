@@ -7,7 +7,7 @@ const Project = (props: ProjectProps) => {
     const tech = props.Technologies.join(', ');
 
     return (
-        <Container fluid className="_project _fontLato _projectTextMaxWidth">
+        <Container fluid className="_project _fontLato _textMaxWidth">
             <Image className="_projectImage"
                 src={props.ImageLocation}
             />

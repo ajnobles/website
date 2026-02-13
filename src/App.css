@@ -23,3 +23,7 @@ hr {
 ._fontLato {
     font-family: 'Lato';
 }
+
+._textMaxWidth {
+    max-width: 70%;
+}

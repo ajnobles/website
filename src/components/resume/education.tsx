@@ -4,9 +4,9 @@ const Education = (props: educationProps) => {
     const courses = props.RelevantCourseWork.join(',');
     return (
         <Container fluid>
-            <h5>{props.SchoolName} - {props.SchoolLocation}</h5>
+            <h5><u><b>{props.SchoolName} - {props.SchoolLocation}</b></u></h5>
             <ul>
-                <li>{props.StartMonthYear} - {props.EndMonthYear}</li>
+                <li>{props.EndMonthYear}</li>
                 <li>{props.Degree}, {props.Discipline}, GPA: {props.GPA}</li>
                 <li>Relevant Coursework: {courses}</li>
             </ul>
