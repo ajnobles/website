@@ -9,5 +9,5 @@ export default defineConfig({
       usePolling: true
     }
   },
-  base: https://ajnobles.github.io/website/
+  base: 'https://ajnobles.github.io/website/',
 })
