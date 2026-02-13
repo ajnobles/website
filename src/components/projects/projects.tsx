@@ -27,7 +27,7 @@ const Projects = () => {
     };
 
     return (
-        <Container id="projects" className="text-center">
+        <Container className="text-center">
             <h2 className="_fontMontserrat700">Projects</h2>
             <hr />
             <Project {...smallsh}/>

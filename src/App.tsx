@@ -20,13 +20,13 @@ function App() {
           <Row className='bg-light text-dark _mainContainerRow'>
             <Header />
           </Row>
-          <Row className='bg-dark text-light _mainContainerRow'>
+          <Row id="projects" className='bg-dark text-light _mainContainerRow'>
             <Projects />
           </Row>
-          <Row className='bg-light text-dark _mainContainerRow'>
+          <Row id="resume" className='bg-light text-dark _mainContainerRow'>
             <Resume />
           </Row>
-          <Row className='bg-dark text-light _mainContainerRow'>
+          <Row id="contact" className='bg-dark text-light _mainContainerRow'>
             <Contact />
           </Row>
           <Row className='bg-light text-dark _mainContainerRow'>

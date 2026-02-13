@@ -2,7 +2,7 @@ import Container from "react-bootstrap/esm/Container";
 
 const Contact = () => {
     return (
-        <Container id="contact" className="text-center text-uppercase _fontMontserrat700">
+        <Container className="text-center text-uppercase _fontMontserrat700">
             <h2>Contact Me</h2>
             <hr />
             <h4>
