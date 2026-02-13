@@ -8,5 +8,6 @@ export default defineConfig({
     watch: {
       usePolling: true
     }
-  }
+  },
+  base: https://ajnobles.github.io/website/
 })
