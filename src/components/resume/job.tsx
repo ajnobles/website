@@ -1,15 +1,35 @@
+import { Col, Row } from "react-bootstrap";
+import Accordion from "react-bootstrap/esm/Accordion";
+import Container from "react-bootstrap/esm/Container";
+
 const Job = (props: JobProps) => {
     
     let endMonth = props.EndMonthYear ? props.EndMonthYear : "Present";
+    const hasDetails = (props.Details.length > 0)
 
     return (
-        <>
-            <h5 className="_nowrap"><b><u>{props.Company}  {props.JobTitle}</u></b></h5>
-            <ul>
-                <li>{props.CompanyLocation}</li>
-                <li>{props.StartMonthYear} - {endMonth}</li>
-            </ul>
-        </>);
+        <Accordion.Item className="" eventKey={props.EventKey}>
+            <Accordion.Header>
+                <Container fluid>
+                    <Col>
+                        <Row>
+                            <h5 className="">{props.Company} - {props.JobTitle}</h5>
+                        </Row>
+                        <Row><div>{props.CompanyLocation}</div></Row>
+                        <Row><div>{props.StartMonthYear} - {endMonth}</div></Row>
+                    </Col>
+                </Container>
+            </Accordion.Header>   
+            <Accordion.Body className="_textMaxWidth">
+            {hasDetails ? 
+                <ul>
+                    {props.Details.map((detail: string) => {
+                        return <li>{detail}</li>
+                    })}
+            </ul> : <></>}
+            </Accordion.Body>       
+        </Accordion.Item>
+        );
 }
 
 interface JobProps {
@@ -17,7 +37,9 @@ interface JobProps {
     Company: string,
     CompanyLocation: string,
     StartMonthYear: string,
-    EndMonthYear?: string
+    EndMonthYear?: string,
+    EventKey: string,
+    Details: string[]
 }
 
 export default Job;

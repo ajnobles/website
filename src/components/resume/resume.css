@@ -5,3 +5,14 @@
 ._nowrap {
     white-space: nowrap;
 }
+
+._card {
+    margin: auto;
+    margin-top: 15px;
+}
+
+
+._resumeDownloadButton {
+    min-width: fit-content;
+    margin-top: 15px;
+}
