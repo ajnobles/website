@@ -1,13 +1,13 @@
 import Job from "./job";
 import Education from "./education";
-import { Accordion, Button, Col, Container, Row } from "react-bootstrap";
+import { Accordion, Col, Container, Row } from "react-bootstrap";
 import './resume.css';
 import SectionHeader from "../sectionHeader/section_header";
 import SectionSubHeader from "../sectionHeader/section_subheader";
 
 //import resume_pdf from '../../assets/projects/AllenNobles_Resume.pdf'
-const ResumePDF = 'AllenNobles_Resume.pdf'
-const ResumePath = '/src/assets/projects/'
+// const ResumePDF = 'AllenNobles_Resume.pdf'
+// const ResumePath = '/src/assets/projects/'
 
 const Resume = () => {
 
@@ -49,22 +49,22 @@ const Resume = () => {
     let educationEventKey = 0;
     let jobEventKey = 0;
 
-    const headerChild = [
-        <div style={{marginTop: '10px'}}>
-            <a
-                href={ResumePath + ResumePDF}
-                download={ResumePDF}
-            >
-                <Button>
-                    Download Resume
-                </Button>
-            </a>
-        </div>
-    ];
+    // const headerChild = [
+    //     <div style={{marginTop: '10px'}}>
+    //         <a
+    //             href={ResumePath + ResumePDF}
+    //             download={ResumePDF}
+    //         >
+    //             <Button>
+    //                 Download Resume
+    //             </Button>
+    //         </a>
+    //     </div>
+    // ];
     
     return (
         <Container className="_maxWidthContent">
-            <SectionHeader Title="Resume" Children={headerChild} />
+            <SectionHeader Title="Resume"  />
             <Row className="_paddingTop10">
                 <Col className="_paddingBottom15">
                     <SectionSubHeader Title="Experience" />
