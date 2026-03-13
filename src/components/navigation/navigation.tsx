@@ -9,7 +9,9 @@ const Navigation = () => {
             bg="dark"
             variant="dark"
         >
-            <Container className="text-uppercase _fontMontserrat700">
+            <Container 
+                className="text-uppercase _fontMontserrat700"
+            >
                 <Navbar.Brand href="#home" className="">Allen Nobles</Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse>

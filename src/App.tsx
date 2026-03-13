@@ -10,26 +10,29 @@ import Footer from './components/footer/footer';
 
 function App() {
 
+  const cssDark = "bg-dark text-light _sectionPadding";
+  const cssLight = "bg-light text-dark _sectionPadding";
+
   return (
     <>
         <span id="home" />
         <Navigation />
-        <Container 
+        <Container
             fluid
         >
-          <Row className='bg-light text-dark _mainContainerRow'>
+          <Row className={cssLight}>
             <Header />
           </Row>
-          <Row id="projects" className='bg-dark text-light _mainContainerRow'>
+          <Row id="projects" className={cssDark}>
             <Projects />
           </Row>
-          <Row id="resume" className='bg-light text-dark _mainContainerRow'>
+          <Row id="resume" className={cssLight}>
             <Resume />
           </Row>
-          <Row id="contact" className='bg-dark text-light _mainContainerRow'>
+          <Row id="contact" className={cssDark}>
             <Contact />
           </Row>
-          <Row className='bg-light text-dark _mainContainerRow'>
+          <Row className={cssLight}>
             <Footer />
           </Row>
         </Container>

@@ -7,12 +7,13 @@ import Row from "react-bootstrap/esm/Row";
 import Stack from "react-bootstrap/esm/Stack";
 
 import './footer.css'
+import SectionHeader from "../sectionHeader/section_header";
 
 const Footer = () => {
     return (
         <Container className="text-uppercase text-center _fontMontserrat700">
             <Row>
-                <h4>Around the Web</h4>
+                <SectionHeader Title="Around the Web" />
                 <Stack direction="horizontal" gap={3} className="justify-content-center">
                     <Button href="http://www.linkedin.com/in/allenjnobles">
                         <FontAwesomeIcon icon={faLinkedinIn} />
