@@ -3,24 +3,27 @@ import Col from "react-bootstrap/esm/Col";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 
+import type { IEducation } from "./educationData";
+
 const Education = (props: educationProps) => {
-    const courses = props.RelevantCourseWork.join(',');
+    const courses = props.Education.RelevantCourseWork.join(',');
+
     return (
         <Accordion.Item className="" eventKey={props.EventKey}>
             <Accordion.Header>                
                 <Container fluid>
                     <Col>
                         <Row>
-                            <h5 className="">{props.SchoolName}</h5>
+                            <h5 className="">{props.Education.SchoolName}</h5>
                         </Row>
-                        <Row><div>{props.Degree}, {props.Discipline}</div></Row>
-                        <Row><div>{props.EndMonthYear}</div></Row>
+                        <Row><div>{props.Education.Degree}, {props.Education.Discipline}</div></Row>
+                        <Row><div>{props.Education.EndMonthYear}</div></Row>
                     </Col>
                 </Container>
             </Accordion.Header>   
             <Accordion.Body className="_textMaxWidth">
-                <div>{props.SchoolLocation}</div>
-                <div><b>GPA:</b> {props.GPA}</div>
+                <div>{props.Education.SchoolLocation}</div>
+                <div><b>GPA:</b> {props.Education.GPA}</div>
                 <div><b>Relevant Coursework:</b> {courses}</div>
             </Accordion.Body>       
         </Accordion.Item>
@@ -28,14 +31,7 @@ const Education = (props: educationProps) => {
 };
 
 interface educationProps {
-    SchoolName: string,
-    SchoolLocation: string,
-    Degree: string,
-    Discipline: string,
-    RelevantCourseWork: string[],
-    GPA: number,
-    StartMonthYear: string,
-    EndMonthYear: string,
+    Education: IEducation
     EventKey: string,
 }
 

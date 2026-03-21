@@ -4,22 +4,24 @@ import Container from "react-bootstrap/esm/Container";
 import Image from "react-bootstrap/esm/Image"
 import Row from "react-bootstrap/esm/Row";
 
+import { type IProject } from './data';
+
 const Project = (props: ProjectProps) => {
-    const tech = props.Technologies.join(', ');
+    const tech = props.Project.Technologies.join(', ');
 
     return (        
         <Accordion.Item className="" eventKey={props.EventKey}>
             <Accordion.Header>
-                <h5 className="_nowrap">{props.Name}</h5>
+                <h5 className="_nowrap">{props.Project.Name}</h5>
             </Accordion.Header>   
             <Accordion.Body className="">
                 <Container style={{maxWidth: "700px" }}>
                     <Row>
                         <Col>
-                            <Image className="_projectImage" src={props.ImageLocation} />
+                            <Image className="_projectImage" src={props.Project.ImageLocation} />
                         </Col>
                         <Col className="my-auto">
-                            <div>{props.Description}</div>
+                            <div>{props.Project.Description}</div>
                             <div><i>Programming languages/Technologies used: {tech}</i></div>
                         </Col>
                     </Row>
@@ -30,11 +32,7 @@ const Project = (props: ProjectProps) => {
 }
 
 interface ProjectProps {
-    Name: string,
-    Subtitle: string,
-    Description: string,
-    ImageLocation?: string,
-    Technologies: string[],
+    Project: IProject;
     EventKey: string,
 }
 

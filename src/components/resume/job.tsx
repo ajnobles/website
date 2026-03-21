@@ -3,44 +3,43 @@ import Col from "react-bootstrap/esm/Col";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 
+import { type IJob } from "./jobData";
+
 const Job = (props: JobProps) => {
-    
-    let endMonth = props.EndMonthYear ? props.EndMonthYear : "Present";
-    const hasDetails = (props.Details.length > 0)
+    let endMonth = props.Job.EndMonthYear ? props.Job.EndMonthYear : "Present";    
+    let hasDetails = (props.Job.Details?.length > 0);
+
+    const noJobDescription = <div>See <a href="http://www.linkedin.com/in/allenjnobles">LinkedIn</a> for job description</div>
 
     return (
-        <Accordion.Item className="" eventKey={props.EventKey}>
+        <Accordion.Item eventKey={props.EventKey}>
             <Accordion.Header>
                 <Container fluid>
                     <Col>
                         <Row>
-                            <h5 className="">{props.Company} - {props.JobTitle}</h5>
+                            <h5>{props.Job.Company} - {props.Job.JobTitle}</h5>
                         </Row>
-                        <Row><div>{props.CompanyLocation}</div></Row>
-                        <Row><div>{props.StartMonthYear} - {endMonth}</div></Row>
+                        <Row><div>{props.Job.CompanyLocation}</div></Row>
+                        <Row><div>{props.Job.StartMonthYear} - {endMonth}</div></Row>
                     </Col>
                 </Container>
             </Accordion.Header>   
             <Accordion.Body className="_textMaxWidth">
             {hasDetails ? 
                 <ul>
-                    {props.Details.map((detail: string) => {
+                    {props.Job.Details.map((detail: string) => {
+                        if (detail.length < 1) {return <>{noJobDescription}</>}
                         return <li>{detail}</li>
                     })}
-            </ul> : <></>}
+                </ul> : <>{noJobDescription}</>}
             </Accordion.Body>       
         </Accordion.Item>
         );
 }
 
 interface JobProps {
-    JobTitle: string,
-    Company: string,
-    CompanyLocation: string,
-    StartMonthYear: string,
-    EndMonthYear?: string,
+    Job: IJob,
     EventKey: string,
-    Details: string[]
 }
 
 export default Job;
