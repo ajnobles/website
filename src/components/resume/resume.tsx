@@ -1,9 +1,12 @@
-import Job from "./job";
-import Education from "./education";
-import { Accordion, Col, Container, Row } from "react-bootstrap";
-import './resume.css';
+import Accordion from "react-bootstrap/esm/Accordion";
+import Col from "react-bootstrap/esm/Col";
+import Container from "react-bootstrap/esm/Container";
+import Row from "react-bootstrap/esm/Row";
+
 import SectionHeader from "../sectionHeader/section_header";
 import SectionSubHeader from "../sectionHeader/section_subheader";
+import Job from "./job";
+import Education from "./education";
 
 //import resume_pdf from '../../assets/projects/AllenNobles_Resume.pdf'
 // const ResumePDF = 'AllenNobles_Resume.pdf'
@@ -48,19 +51,6 @@ const Resume = () => {
 
     let educationEventKey = 0;
     let jobEventKey = 0;
-
-    // const headerChild = [
-    //     <div style={{marginTop: '10px'}}>
-    //         <a
-    //             href={ResumePath + ResumePDF}
-    //             download={ResumePDF}
-    //         >
-    //             <Button>
-    //                 Download Resume
-    //             </Button>
-    //         </a>
-    //     </div>
-    // ];
     
     return (
         <Container className="_maxWidthContent">

@@ -1,5 +1,8 @@
-import { Image, Container, Col, Row } from "react-bootstrap";
-import './header.css'
+import Col from 'react-bootstrap/esm/Col'
+import Container from 'react-bootstrap/esm/Container'
+import Image from 'react-bootstrap/esm/Image'
+import Row from 'react-bootstrap/esm/Row'
+
 import profileImg from '../../assets/Profile-Pic.jpg'
 
 const Header = () => {

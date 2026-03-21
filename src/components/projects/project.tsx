@@ -4,8 +4,6 @@ import Container from "react-bootstrap/esm/Container";
 import Image from "react-bootstrap/esm/Image"
 import Row from "react-bootstrap/esm/Row";
 
-// TODO: CREATE EXPANDABLE MODAL
-
 const Project = (props: ProjectProps) => {
     const tech = props.Technologies.join(', ');
 

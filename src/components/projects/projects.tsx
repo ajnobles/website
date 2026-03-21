@@ -1,12 +1,13 @@
+import Accordion from "react-bootstrap/esm/Accordion";
 import Container from "react-bootstrap/esm/Container";
 import Col from "react-bootstrap/esm/Col"
 import Row from "react-bootstrap/esm/Row"
+
+import SectionHeader from "../sectionHeader/section_header";
 import Project from "./project";
-import './projects.css'
+
 import smallshImg from '../../assets/projects/Smallsh_Running_Test.png';
 import particleImg from '../../assets/projects/Particle_System_Demo_1.png';
-import { Accordion } from "react-bootstrap";
-import SectionHeader from "../sectionHeader/section_header";
 
 const Projects = () => {
     

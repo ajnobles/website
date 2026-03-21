@@ -1,3 +1,4 @@
+/** Shared */
 hr {
     background-color: black;
     height: 5px;
@@ -17,6 +18,10 @@ hr {
     padding-bottom: 15px;
 }
 
+._paddingLeft40 {
+    padding-left: 40px;
+}
+
 ._sectionPadding {
     padding: 50px 0px;
 }
@@ -34,6 +39,45 @@ hr {
     max-width: 1000px;
 }
 
+._nowrap {
+    white-space: nowrap;
+}
+
 .row .container {
     max-width: 1440px;
+}
+
+/** HEADER */
+.img-profile {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+._headerTitle {
+    text-transform: uppercase;
+    font-size: 3em;
+    font-family: 'Montserrat';
+    font-weight: 700;
+}
+
+/** PROJECT */
+._projectImage {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+._project {
+    padding: 25px 10px;
+}
+
+/** RESUME */
+._card {
+    margin: auto;
+    margin-top: 15px;
+}
+
+
+._resumeDownloadButton {
+    min-width: fit-content;
+    margin-top: 15px;
 }

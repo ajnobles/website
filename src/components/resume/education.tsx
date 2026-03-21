@@ -1,6 +1,7 @@
-import { Container, Col, Row } from "react-bootstrap";
 import Accordion from "react-bootstrap/esm/Accordion";
-//import Container from "react-bootstrap/esm/Container";
+import Col from "react-bootstrap/esm/Col";
+import Container from "react-bootstrap/esm/Container";
+import Row from "react-bootstrap/esm/Row";
 
 const Education = (props: educationProps) => {
     const courses = props.RelevantCourseWork.join(',');

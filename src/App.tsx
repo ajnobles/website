@@ -1,12 +1,14 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/esm/Container'
+import Row from 'react-bootstrap/esm/Row';
+
 import './App.css'
-import Header from './components/header/header';
 import Contact from './components/contact/contact';
+import Footer from './components/footer/footer';
+import Header from './components/header/header';
+import Navigation from './components/navigation/navigation';
 import Projects from './components/projects/projects';
 import Resume from './components/resume/resume';
-import Navigation from './components/navigation/navigation';
-import { Container, Row } from 'react-bootstrap';
-import Footer from './components/footer/footer';
 
 function App() {
 

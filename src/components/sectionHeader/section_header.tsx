@@ -1,4 +1,3 @@
-
 const SectionHeader = (props: SectionHeaderProps) => {
     return (
     <div style={{marginBottom: "30px"}}>
