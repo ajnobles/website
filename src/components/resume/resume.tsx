@@ -36,12 +36,14 @@ const Resume = () => {
 
     let educationEventKey = 0;
     let jobEventKey = 0;
-    
+
+    const colCss = "_minResumeSectionWidth _paddingTop10 _paddingBottom15"
+
     return (
         <Container className="_maxWidthContent">
             <SectionHeader Title="Resume"  />
             <Row>
-                <Col className="_paddingTop10 _paddingBottom15">
+                <Col className={colCss}>
                     <SectionSubHeader Title="Experience" />
                     <Accordion>
                         {jobs && jobs.map((job: IJob) => {
@@ -54,7 +56,7 @@ const Resume = () => {
                         })}
                     </Accordion>
                 </Col>
-                <Col className="_paddingTop10">
+                <Col className={colCss}>
                     <SectionSubHeader Title="Education" />
                     <Accordion>
                         {education && education.map((school: IEducation) => {

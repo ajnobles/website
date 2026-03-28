@@ -76,6 +76,9 @@ hr {
     margin-top: 15px;
 }
 
+._minResumeSectionWidth {
+    min-width: 400px;
+}
 
 ._resumeDownloadButton {
     min-width: fit-content;
