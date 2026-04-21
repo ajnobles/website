@@ -18,8 +18,7 @@ const Header = () => {
             <Col className="my-auto">
                 <h1 id="head-title" className="_headerTitle">Allen Nobles</h1>
                 <h3 id="head-subtitle" className="_paddingTop10 _fontLato">
-                    <div className="text-nowrap">Computer Science</div>
-                    <div className="text-nowrap">Oregon State University</div>
+                    <div className="text-nowrap">Software Developer</div>
                 </h3>
             </Col>
         </Row>
