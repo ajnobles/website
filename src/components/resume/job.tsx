@@ -9,7 +9,7 @@ const Job = (props: JobProps) => {
     let endMonth = props.Job.EndMonthYear ? props.Job.EndMonthYear : "Present";    
     let hasDetails = (props.Job.Details?.length > 0);
 
-    const noJobDescription = <div>See <a href="https://www.linkedin.com/in/allenjnobles/">LinkedIn</a> for job description</div>
+    const noJobDescription = <div>See <a href="http://www.linkedin.com/in/allenjnobles" target="_blank">LinkedIn</a> for job description</div>;
 
     return (
         <Accordion.Item eventKey={props.EventKey}>

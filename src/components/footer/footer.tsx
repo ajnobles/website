@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons"
 
-import Button from "react-bootstrap/esm/Button";
 import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Stack from "react-bootstrap/esm/Stack";
@@ -15,12 +14,12 @@ const Footer = () => {
             <Row>
                 <SectionHeader Title="Around the Web" />
                 <Stack direction="horizontal" gap={3} className="justify-content-center">
-                    <Button href="http://www.linkedin.com/in/allenjnobles">
+                    <a href="http://www.linkedin.com/in/allenjnobles" className="button-style" target="_blank">
                         <FontAwesomeIcon icon={faLinkedinIn} />
-                    </Button>
-                    <Button href="https://github.com/ajnobles">
+                    </a>
+                    <a href="https://github.com/ajnobles" className="button-style" target="_blank">
                         <FontAwesomeIcon icon={faGithub} />
-                    </Button>
+                    </a>
                 </Stack>
             </Row>
         </Container>
