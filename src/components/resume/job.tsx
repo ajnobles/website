@@ -28,8 +28,7 @@ const Job = (props: JobProps) => {
             {hasDetails ? 
                 <ul>
                     {props.Job.Details.map((detail: string) => {
-                        if (detail.length < 1) {return <>{noJobDescription}</>}
-                        return <li>{detail}</li>
+                        return <li key={detail}>{detail}</li>
                     })}
                 </ul> : <>{noJobDescription}</>}
             </Accordion.Body>       
