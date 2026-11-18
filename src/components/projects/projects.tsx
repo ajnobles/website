@@ -29,6 +29,7 @@ const Projects = () => {
                         {
                           projects && projects.map((project: IProject) => {
                             return (<Project
+                              key={Project.name}
                               Project={project}
                               EventKey={(eventKey++).toString()}
                             />)

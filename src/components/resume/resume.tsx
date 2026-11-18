@@ -49,6 +49,7 @@ const Resume = () => {
                         {jobs && jobs.map((job: IJob) => {
                             return (
                                 <Job
+                                    key={job.Company + job.StartMonthYear}
                                     Job={job}
                                     EventKey={(jobEventKey++).toString()}
                                 />
@@ -62,6 +63,7 @@ const Resume = () => {
                         {education && education.map((school: IEducation) => {
                             return (
                                 <Education
+                                    key={school.SchoolName + school.StartMonthYear}
                                     Education={school}
                                     EventKey={(educationEventKey++).toString()}
                                 />
