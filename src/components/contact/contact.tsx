@@ -6,7 +6,7 @@ const Contact = () => {
         <Container className="text-center text-uppercase _fontMontserrat700">
             <SectionHeader Title="Contact Me" />
             <h4>
-                <a href="mailto: allennobles@mac.com">allennobles@mac.com</a>
+                <a href="mailto:allennobles@mac.com">allennobles@mac.com</a>
             </h4>
         </Container>
     )
