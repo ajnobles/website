@@ -9,7 +9,7 @@ import './footer.css'
 import SectionHeader from "../sectionHeader/section_header";
 
 const Footer = () => {
-    let btnStyle = 'btn btn-primary';
+    const btnStyle = 'btn btn-primary';
     return (
         <Container className="text-uppercase text-center _fontMontserrat700">
             <Row>

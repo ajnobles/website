@@ -6,8 +6,8 @@ import Row from "react-bootstrap/esm/Row";
 import { type IJob } from "./jobData";
 
 const Job = (props: JobProps) => {
-    let endMonth = props.Job.EndMonthYear ? props.Job.EndMonthYear : "Present";    
-    let hasDetails = (props.Job.Details?.length > 0) && (props.Job.Details[0].length > 0);
+    const endMonth = props.Job.EndMonthYear ? props.Job.EndMonthYear : "Present";    
+    const hasDetails = (props.Job.Details?.length > 0) && (props.Job.Details[0].length > 0);
 
     const noJobDescription = <div>See <a href="https://www.linkedin.com/in/allenjnobles" target="_blank">LinkedIn</a> for job description</div>;
 

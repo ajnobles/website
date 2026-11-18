@@ -12,5 +12,5 @@ export default SectionHeader;
 
 interface SectionHeaderProps {
     Title: string,
-    Children?: any[]
+    Children?: React.ReactNode[]
 }
