@@ -15,7 +15,7 @@ const Footer = () => {
             <Row>
                 <SectionHeader Title="Around the Web" />
                 <Stack direction="horizontal" gap={3} className="justify-content-center">
-                    <a href="http://www.linkedin.com/in/allenjnobles" className={btnStyle} target="_blank">
+                    <a href="https://www.linkedin.com/in/allenjnobles" className={btnStyle} target="_blank">
                         <FontAwesomeIcon icon={faLinkedinIn} />
                     </a>
                     <a href="https://github.com/ajnobles" className={btnStyle} target="_blank">
