@@ -11,14 +11,15 @@ const Header = () => {
         <Row className="text-center">
             <Col className="">
              <Image 
-               className="img-profile" 
+                 className="img-profile" 
                  roundedCircle 
-                 src={profileImg} />
+                 src={profileImg}
+                 alt="Profile image"/>
             </Col>
             <Col className="my-auto">
                 <h1 id="head-title" className="_headerTitle">Allen Nobles</h1>
                 <h3 id="head-subtitle" className="_paddingTop10 _fontLato">
-                    <div className="text-nowrap">Software Developer</div>
+                    <span className="text-nowrap">Software Developer</span>
                 </h3>
             </Col>
         </Row>

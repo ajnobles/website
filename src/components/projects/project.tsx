@@ -8,6 +8,7 @@ import { type IProject } from './data';
 
 const Project = (props: ProjectProps) => {
     const tech = props.Project.Technologies.join(', ');
+    const imageName = props.Project.Name + " image"
 
     return (        
         <Accordion.Item className="" eventKey={props.EventKey}>
@@ -18,7 +19,10 @@ const Project = (props: ProjectProps) => {
                 <Container style={{maxWidth: "700px" }}>
                     <Row>
                         <Col>
-                            <Image className="_projectImage" src={props.Project.ImageLocation} />
+                            <Image 
+                                className="_projectImage" 
+                                src={props.Project.ImageLocation}
+                                alt={imageName} />
                         </Col>
                         <Col className="my-auto">
                             <div>{props.Project.Description}</div>
