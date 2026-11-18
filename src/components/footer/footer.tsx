@@ -9,15 +9,16 @@ import './footer.css'
 import SectionHeader from "../sectionHeader/section_header";
 
 const Footer = () => {
+    let btnStyle = 'btn btn-primary';
     return (
         <Container className="text-uppercase text-center _fontMontserrat700">
             <Row>
                 <SectionHeader Title="Around the Web" />
                 <Stack direction="horizontal" gap={3} className="justify-content-center">
-                    <a href="http://www.linkedin.com/in/allenjnobles" className="button-style" target="_blank">
+                    <a href="http://www.linkedin.com/in/allenjnobles" className={btnStyle} target="_blank">
                         <FontAwesomeIcon icon={faLinkedinIn} />
                     </a>
-                    <a href="https://github.com/ajnobles" className="button-style" target="_blank">
+                    <a href="https://github.com/ajnobles" className={btnStyle} target="_blank">
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
                 </Stack>
