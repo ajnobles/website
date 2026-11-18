@@ -6,7 +6,7 @@ import Row from "react-bootstrap/esm/Row";
 import type { IEducation } from "./educationData";
 
 const Education = (props: educationProps) => {
-    const courses = props.Education.RelevantCourseWork.join(',');
+    const courses = props.Education.RelevantCourseWork.join(', ');
 
     return (
         <Accordion.Item className="" eventKey={props.EventKey}>
