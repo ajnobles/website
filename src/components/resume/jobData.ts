@@ -5,23 +5,22 @@ const Epic = {
     StartMonthYear: "January 2019",
     EndMonthYear: "",
     Details: [
-        'Executed migration of legacy applications, resulting in improved compatibility with modern tools and technologies, enhancing user experience.',
-        'Contributed to code reviews, fostering a culture of quality that improved overall team performance and reduced production bugs.',
-        'Engaged with technical support teams to address customer feedback, leading to improved product performance and reliability across multiple releases.',
-        'Increased user satisfaction through targeted enhancements in user interface design and functionality.',
+        'Led migration of multiple legacy applications to modern frameworks, improving compatibility with current tooling and reducing maintenance overhead for the engineering team.',
+        'Championed code review culture that raised code quality standards and contributed to a measurable reduction in production bugs across multiple release cycles.',
+        'Partnered with technical support teams to systematically address customer-reported issues, resulting in improved product reliability and fewer repeat incidents.',
+        'Delivered targeted UI/UX enhancements that directly improved end-user workflows, earning positive feedback from customers and internal stakeholders.',
     ],
 } as IJob;
 
 const Vine = {
-    JobTitle: "Music Director",
-    Company: "The Vine Church",
+    JobTitle: "Music Director (Part-Time)",
+    Company: "The Vine",
     CompanyLocation:"Madison, WI",
     StartMonthYear:"July 2023",
     EndMonthYear:"",
     Details:[
-        'Scheduled a team of approximately fifteen musicians and vocalists for a Sunday morning church service.',
-        'Performed auditions for prospective music team members and provided actionable feedback for growth and development.',
-        'Coordinated equipment needed with the audio/visual team to ensure rehearsal and church services occur on time.',
+        'Lead and schedule a team of ~15 musicians and vocalists for weekly Sunday services, managing logistics and coordinating with audio/visual staff.',
+        'Conduct auditions and provide structured feedback to prospective team members, supporting their growth and maintaining team quality.',
     ],
 } as IJob;
 
@@ -32,8 +31,8 @@ const EliteMechanical = {
     StartMonthYear:"March 2017",
     EndMonthYear:"September 2018",
     Details:[
-        'Analyzed construction documents to provide HVAC and plumbing cost estimates for project valuations up to $500,000.',
-        'Worked with potential customers/general contractors to provide budget estimates for design/build construction projects.',
+        'Produced detailed HVAC and plumbing cost estimates for commercial construction projects valued up to $500K, analyzing blueprints and construction documents.',
+        'Developed budget estimates for design/build projects in collaboration with general contractors and clients.',
     ],
 } as IJob;
 
@@ -43,16 +42,7 @@ const SolutionMechanical = {
     CompanyLocation:"Mobile, AL",
     StartMonthYear:"January 2012",
     EndMonthYear:"February 2017",
-    Details:[""],
-} as IJob;
-
-const EngulfUMC = {
-    JobTitle:"Worship Leader",
-    Company:"Engulf United Methodist Church",
-    CompanyLocation:"Gulf Shores, AL",
-    StartMonthYear:"November 2010",
-    EndMonthYear:"April 2012",
-    Details:[""],
+    Details:[],
 } as IJob;
 
 const BatchelorsMechanical = {
@@ -61,7 +51,7 @@ const BatchelorsMechanical = {
     CompanyLocation:"Loxley, AL",
     StartMonthYear:"September 2008",
     EndMonthYear:"December 2011",
-    Details:[""],
+    Details:[],
 } as IJob;
 
 export const JobsData = [
@@ -69,7 +59,6 @@ export const JobsData = [
     Vine,
     EliteMechanical,
     SolutionMechanical,
-    EngulfUMC,
     BatchelorsMechanical,
 ];
 
